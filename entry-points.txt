@@ -1,0 +1,2 @@
+[nagare.commands.redis]
+cli = nagare.admin.commands_redis_cli:CLI
