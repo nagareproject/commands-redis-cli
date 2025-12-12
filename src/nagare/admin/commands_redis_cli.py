@@ -1,5 +1,5 @@
 # --
-# Copyright (c) 2008-2024 Net-ng.
+# Copyright (c) 2014-2025 Net-ng.
 # All rights reserved.
 #
 # This software is licensed under the BSD License, as described in
@@ -41,7 +41,7 @@ class CLI(command.Command):
     def set_arguments(self, parser):
         parser.add_argument('-c', '--cmd', default=None, help='command to execute')
 
-        super(CLI, self).set_arguments(parser)
+        super().set_arguments(parser)
 
     def run(self, redis_service, cmd):
         cfg = redis_service.plugin_config
